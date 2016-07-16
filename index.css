@@ -1,20 +1,5 @@
 /*Navbar styling*/
 
-/*.navbar-default {
-  min-height: 88px;
-}*/
-
-/*.navbar-custom {
-  background-color: #ecf8ec;
-  opacity: 0.85;
-  min-height: 88px;
-  border-color: #E7E7E7;
-  box-shadow: 1.5px 1.5px 1px #888888;
-}
-
-
-/*---------------------*/
-
 .navbar-custom {
   background-color: #ecf8ec;
   opacity: 0.85;
@@ -88,4 +73,23 @@
   }
 }
 
-/*    */
+/* ---------- */
+
+/*table styling*/
+
+h2 {
+  padding: 22px;
+}
+
+.day-listing {
+  padding: 22px;
+}
+
+th {
+  padding: 5px 2em 5px 15px;
+}
+
+td {
+  padding: 5px 2em 5px 15px;
+}
+/* ---------- */
