@@ -6,18 +6,13 @@
   <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!--  -->
-
   <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!--  -->
-
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
   <!-- css  -->
     <link rel="stylesheet" type="text/css" href="index.css">
   <!--  -->
@@ -26,7 +21,7 @@
 
 <body>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-custom">
     <div class="container-fluid">
       <div class="navbar-header">
         <!-- brand image -->
@@ -34,14 +29,14 @@
         <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
+              <span class="sr-only">Toggle nav</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
 
             <a class="navbar-brand" href="#">
-              <img alt="Brand" src="logo.png">
+              <img alt="Le Feuil Vert brand image" src="logo.png">
             </a>
           </div>
         </div>
@@ -49,25 +44,36 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us!</a></li>
+        </ul>
         <!-- search -->
-        <form class="navbar-form navbar-left" role="search">
+        <form class="navbar-form navbar-right" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search our site">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <!--  -->
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us!</a></li>
-        </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <!--  -->
 
   <h2>Hours of Operation</h2>
+
+  <div class="day-list">
+    <ul>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+      <li>Sunday</li>
+    </ul>
+  </div>
 
 
 </body>
