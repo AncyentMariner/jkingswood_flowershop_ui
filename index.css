@@ -1,0 +1,12 @@
+/*Navbar styling*/
+
+.navbar-default {
+  min-height: 85px;
+}
+
+.navbar-collapse {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*    */
