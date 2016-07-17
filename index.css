@@ -110,13 +110,11 @@ td {
   padding: 5px 2em 5px 15px;
 }
 
-#closed1 {
-  display: none;
+
+.hours {
+  display: inline;
 }
 
-#closed2 {
-  display: inline-block;
-}
 
 .hide {
   display: none;
