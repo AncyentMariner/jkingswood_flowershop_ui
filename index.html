@@ -2,21 +2,6 @@
 <html>
 <head>
   <title>Le Feuil Vert</title>
-
-  <!-- Bootstrap CDN -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <!--  -->
-  <!-- jQuery CDN -->
-    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
-  <!-- css  -->
-    <link rel="stylesheet" type="text/css" href="index.css">
-  <!--  -->
-
 </head>
 
 <body>
@@ -45,8 +30,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="">About</a></li>
-          <li><a href="">Contact Us!</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us!</a></li>
         </ul>
         <!-- search -->
         <form class="navbar-form navbar-right" role="search">
@@ -63,11 +48,11 @@
 
   <h2>Hours of Operation</h2>
 
-  <section>
-    <p>
+  <section class="greeting">
+    <p class="col-xs-12 col-md-12">
       We pride ourselves on being open and available for all of your plant needs.
     </p>
-    <p>
+    <p class="col-xs-12 col-md-12">
       Come see us during any of these listed times!
     </p>
   </section>
@@ -75,36 +60,201 @@
   <div class="day-listing">
     <table>
       <head class="header">
-        <th>Day of the Week</th>
-        <th>Hours of Operation</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>Closed</th>
       </head>
-      <tr>
+
+      <tr class="Mon">
         <td>
           <label class="col-xs-12 col-md-12">Monday</label>
         </td>
+        <div id="new">
+        </div>
         <td>
-          ...
+          <input type="checkbox" class="box" value="1">
         </td>
       </tr>
-      <tr>
+
+      <tr class="Tues">
         <td>
           <label class="col-xs-12 col-md-12">Tuesday</label>
         </td>
+        <span>
+          <td>
+            <div>
+              <td id="closed2">
+                <input type="time">
+                <input type="time">
+              </td>
+              <td>
+                <input type="time">
+                <input type="time">
+              </td>
+            </div>
+          </td>
+        </span>
         <td>
-          ...
+          <input type="checkbox" id="box2" value="2">
         </td>
       </tr>
-      <tr>
+
+      <tr class="Weds">
         <td>
           <label class="col-xs-12 col-md-12">Wednesday</label>
         </td>
+        <span>
+          <td>
+            <form id="closed3">
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+            </form>
+          </td>
+        </span>
         <td>
-          ...
+          <div>
+            <input type="checkbox" class="box" value="closed" checked="checked">
+          </div>
+        </td>
+      </tr>
+
+      <tr class="Thurs">
+        <td>
+          <label class="col-xs-12 col-md-12">Thursday</label>
+        </td>
+        <span>
+          <td>
+            <form id="closed4">
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+            </form>
+          </td>
+        </span>
+        <td>
+          <div>
+            <input type="checkbox" class="box" value="closed" checked="checked">
+          </div>
+        </td>
+      </tr>
+
+      <tr class="Fri">
+        <td>
+          <label class="col-xs-12 col-md-12">Friday</label>
+        </td>
+        <span>
+          <td>
+            <form id="closed5">
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+            </form>
+          </td>
+        </span>
+        <td>
+          <div>
+            <input type="checkbox" class="box" value="closed" checked="checked">
+          </div>
+        </td>
+      </tr>
+
+      <tr class="Sat">
+        <td>
+          <label class="col-xs-12 col-md-12">Saturday</label>
+        </td>
+        <span>
+          <td>
+            <form id="closed6">
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+            </form>
+          </td>
+        </span>
+        <td>
+          <div>
+            <input type="checkbox" class="box" value="closed" checked="checked">
+          </div>
+        </td>
+      </tr>
+
+      <tr class="Sun">
+        <td>
+          <label class="col-xs-12 col-md-12">Sunday</label>
+        </td>
+        <span>
+          <td>
+            <form id="closed7">
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+                <td>
+                  <input type="time">
+                  <input type="time">
+                </td>
+            </form>
+          </td>
+        </span>
+        <td>
+          <div>
+            <input type="checkbox" class="box" value="closed" checked="checked">
+          </div>
         </td>
       </tr>
 
     </table>
+  </div>
+
+  <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+  <!--  -->
+  <!-- css  -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
 </body>
 
+<script>
+  $(document).ready(function(){
+    var box = this.getElementById('#closed2');
+    $('input[type="checkbox"]').click(function(){
+        if($(this).prop("value")=="2"){
+          $('#closed2').toggle('.hide');
+          console.log('clicked?');
+        }
+    });
+  });
+
+</script>
 
 </html>
