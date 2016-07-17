@@ -80,7 +80,6 @@
   }
 }
 
-/* ---------- */
 
 /*content styling*/
 
@@ -89,7 +88,6 @@
   margin: 0em 1em 1em 2em;
 }
 
-/* ---------- */
 
 /*table styling*/
 
@@ -110,14 +108,10 @@ td {
   padding: 5px 2em 5px 15px;
 }
 
-
-.hours {
-  display: inline;
-}
-
-
-.hide {
+#removeCol {
   display: none;
 }
 
-/* ---------- */
+#breakCol {
+  display: inline;
+}

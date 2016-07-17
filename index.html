@@ -59,26 +59,31 @@
 
   <div class="day-listing">
     <table>
-      <head class="header">
+      <tr class="header">
         <th></th>
-        <th></th>
-        <th></th>
+        <th>Opening Time</th>
+        <th>Closing Time</th>
         <th>Closed</th>
-      </head>
+      </tr>
 
-      <tr class="day" value="mon">
+      <tr class="day" id="mon">
         <td>
           <label class="col-xs-12 col-md-12">Monday</label>
         </td>
         <td>
           <span class="hours" id="closed1">
-            From <input type="time">
-            Until <input type="time">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <input type="checkbox" class="box" value="1">
+          <span id="closed1a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
+            <input type="checkbox" class="box" value="1">
+          </span>
         </td>
       </tr>
 
@@ -87,14 +92,19 @@
           <label class="col-xs-12 col-md-12">Tuesday</label>
         </td>
         <td>
-          <span id="closed2">
-            From <input type="time">
-            Until <input type="time">
+          <span class="hours" id="closed2">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <input type="checkbox" id="box2" value="2">
+          <span id="closed2a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
+            <input type="checkbox" id="box2" value="2">
+          </span>
         </td>
       </tr>
 
@@ -103,16 +113,19 @@
           <label class="col-xs-12 col-md-12">Wednesday</label>
         </td>
         <td>
-          <span id="closed3">
-            From <input type="time">
-            Until <input type="time">
+          <span class="hours" id="closed3">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <div>
+          <span id="closed3a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
             <input type="checkbox" class="box" value="3">
-          </div>
+          </span>
         </td>
       </tr>
 
@@ -121,16 +134,19 @@
           <label class="col-xs-12 col-md-12">Thursday</label>
         </td>
         <td>
-          <span id="closed4">
-            From <input type="time">
-            Until <input type="time">
+          <span class="hours" id="closed4">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <div>
+          <span id="closed4a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
             <input type="checkbox" class="box" value="4">
-          </div>
+          </span>
         </td>
       </tr>
 
@@ -139,16 +155,19 @@
           <label class="col-xs-12 col-md-12">Friday</label>
         </td>
         <td>
-          <span id="closed5">
-            From <input type="time">
-            Until <input type="time">
+          <span class="hours" id="closed5">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <div>
+          <span id="closed5a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
             <input type="checkbox" class="box" value="5">
-          </div>
+          </span>
         </td>
       </tr>
 
@@ -157,16 +176,19 @@
           <label class="col-xs-12 col-md-12">Saturday</label>
         </td>
         <td>
-          <span id="closed6">
-            From <input type="time">
-            Until <input type="time">
+          <span class="hours" id="closed6">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <div>
+          <span id="closed6a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
             <input type="checkbox" class="box" value="6">
-          </div>
+          </span>
         </td>
       </tr>
 
@@ -175,32 +197,34 @@
           <label class="col-xs-12 col-md-12">Sunday</label>
         </td>
         <td>
-          <span id="closed7">
-            From <input type="time">
-            Until <input type="time">
+          <span class="hours" id="closed7">
+            <input type="time">
           </span>
         </td>
-        <td></td>
         <td>
-          <div>
+          <span id="closed7a">
+            <input type="time">
+          </span>
+        </td>
+        <td>
+          <span>
             <input type="checkbox" class="box" value="7">
-          </div>
+          </span>
         </td>
       </tr>
-
     </table>
   </div>
+
+  <button id="addCol">new stuff</button>
+  <button id="removeCol">remove new stuff</button>
+
+
 
   <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
-  <!--  -->
   <!-- css  -->
     <link rel="stylesheet" type="text/css" href="index.css">
 
@@ -208,33 +232,60 @@
 
 <script>
   $(document).ready(function(){
-    var box = this.getElementById('#closed2');
     $('input[type="checkbox"]').click(function(){
         if($(this).prop("value")=="1"){
           $('#closed1').toggle('.hide');
+          $('#closed1a').toggle('.hide');
         }
         if($(this).prop("value")=="2"){
           $('#closed2').toggle('.hide');
+          $('#closed2a').toggle('.hide');
         }
         if($(this).prop("value")=="3"){
           $('#closed3').toggle('.hide');
+          $('#closed3a').toggle('.hide');
         }
         if($(this).prop("value")=="4"){
           $('#closed4').toggle('.hide');
+          $('#closed4a').toggle('.hide');
         }
         if($(this).prop("value")=="5"){
           $('#closed5').toggle('.hide');
+          $('#closed5a').toggle('.hide');
         }
         if($(this).prop("value")=="6"){
           $('#closed6').toggle('.hide');
+          $('#closed6a').toggle('.hide');
         }
         if($(this).prop("value")=="7"){
           $('#closed7').toggle('.hide');
+          $('#closed7a').toggle('.hide');
         }
     });
 
-    $('#')
+    // $('#addCol').click(function () {
+    //     $("tr").append("<td>New Column</td>");
+    // });
+
+    $('#addCol').click(function () {
+      $('.hours').append('<td id="breakCol">New Column</td>');
+      $('#addCol').hide();
+      $('#removeCol').show();
+    });
+
+    $('#removeCol').click(function () {
+      $('.hours').remove('#breakCol');
+      $('#removeCol').hide();
+      $('#addCol').show();
+    });
   });
+
+  // function rowInsert() {
+  //   var row = document.getElementsByTagName('tr')[0];
+  //   var x = row.insertCell(2);
+  //   x.innerHTML = "Closed for Break";
+  // };
+
 
 </script>
 
