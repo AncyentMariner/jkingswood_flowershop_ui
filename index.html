@@ -21,7 +21,7 @@
             </button>
 
             <a class="navbar-brand" href="#">
-              <img alt="Le Feuil Vert brand image" src="logo.png">
+              <img alt="Le Feuil Vert brand image" src="img/logo.png">
             </a>
           </div>
         </div>
@@ -46,6 +46,19 @@
   </nav>
   <!--  -->
 
+  <header class="intro-header" style="background-image: url('img/flower.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                  <h1>Le Feuil Vert</h1>
+                  <span class="subheading">A Place for all your garden needs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
   <h2>Hours of Operation</h2>
 
   <section class="greeting">
@@ -59,7 +72,7 @@
 
   <div class="day-listing">
     <table>
-      <tr class="header">
+      <tr id="top" class="header">
         <th></th>
         <th>Opening Time</th>
         <th>Closing Time</th>
@@ -198,12 +211,12 @@
         </td>
         <td>
           <span class="hours" id="closed7">
-            <input type="time">
+            <input type="time" class="time1">
           </span>
         </td>
         <td>
           <span id="closed7a">
-            <input type="time">
+            <input type="time" class="time2">
           </span>
         </td>
         <td>
@@ -215,16 +228,16 @@
     </table>
   </div>
 
-  <div class="btn-group">
-    <button id="addCol">new stuff</button>
-    <button id="removeCol">remove new stuff</button>
+  <div class="buttons">
+    <button type="button" class="btn col-md-4" id="addCol">Add Breaks</button>
+    <button type="button" class="btn col-md-4" id="removeCol">Remove Breaks</button>
   </div>
 
   <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <!-- css  -->
     <link rel="stylesheet" type="text/css" href="index.css">
 
@@ -267,7 +280,7 @@
 
     // add break
     $('#addCol').click(function () {
-      $('.hours').append('<td class="breakCol"><input type="time"><input type="time"></td>');
+      $('.hours').append('<td class="breakCol">We are away from  <input type="time"> to <input type="time"></td>');
       $('#addCol').hide();
       $('#removeCol').show();
     });
@@ -279,7 +292,6 @@
       $('#addCol').show();
     });
   });
-
 </script>
 
 </html>
