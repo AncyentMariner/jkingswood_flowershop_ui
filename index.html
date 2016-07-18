@@ -215,10 +215,10 @@
     </table>
   </div>
 
-  <button id="addCol">new stuff</button>
-  <button id="removeCol">remove new stuff</button>
-
-
+  <div class="btn-group">
+    <button id="addCol">new stuff</button>
+    <button id="removeCol">remove new stuff</button>
+  </div>
 
   <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -231,6 +231,8 @@
 </body>
 
 <script>
+
+  // remove open times if shop is closed
   $(document).ready(function(){
     $('input[type="checkbox"]').click(function(){
         if($(this).prop("value")=="1"){
@@ -263,29 +265,20 @@
         }
     });
 
-    // $('#addCol').click(function () {
-    //     $("tr").append("<td>New Column</td>");
-    // });
-
+    // add break
     $('#addCol').click(function () {
-      $('.hours').append('<td id="breakCol">New Column</td>');
+      $('.hours').append('<td class="breakCol"><input type="time"><input type="time"></td>');
       $('#addCol').hide();
       $('#removeCol').show();
     });
 
+    // remove break
     $('#removeCol').click(function () {
-      $('.hours').remove('#breakCol');
+      $('.breakCol').remove();
       $('#removeCol').hide();
       $('#addCol').show();
     });
   });
-
-  // function rowInsert() {
-  //   var row = document.getElementsByTagName('tr')[0];
-  //   var x = row.insertCell(2);
-  //   x.innerHTML = "Closed for Break";
-  // };
-
 
 </script>
 
