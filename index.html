@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Le Feuil Vert</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -221,68 +225,5 @@
     <button type="button" class="btn col-md-4" id="addCol">Add Breaks</button>
     <button type="button" class="btn col-md-4" id="removeCol">Remove Breaks</button>
   </div>
-
-  <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Bootstrap CDN -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <!-- css  -->
-    <link rel="stylesheet" type="text/css" href="index.css">
-  <!-- javascript   -->
-    <link rel="stylesheet" type="text/css" href="index.js">
-
 </body>
-
-<script>
-
-  // remove open times if shop is closed
-  $(document).ready(function(){
-    $('input[type="checkbox"]').click(function(){
-        if($(this).prop("value")=="1"){
-          $('#closed1').toggle('.hide');
-          $('#closed1a').toggle('.hide');
-        }
-        if($(this).prop("value")=="2"){
-          $('#closed2').toggle('.hide');
-          $('#closed2a').toggle('.hide');
-        }
-        if($(this).prop("value")=="3"){
-          $('#closed3').toggle('.hide');
-          $('#closed3a').toggle('.hide');
-        }
-        if($(this).prop("value")=="4"){
-          $('#closed4').toggle('.hide');
-          $('#closed4a').toggle('.hide');
-        }
-        if($(this).prop("value")=="5"){
-          $('#closed5').toggle('.hide');
-          $('#closed5a').toggle('.hide');
-        }
-        if($(this).prop("value")=="6"){
-          $('#closed6').toggle('.hide');
-          $('#closed6a').toggle('.hide');
-        }
-        if($(this).prop("value")=="7"){
-          $('#closed7').toggle('.hide');
-          $('#closed7a').toggle('.hide');
-        }
-    });
-
-    // add break
-    $('#addCol').click(function () {
-      $('.hours').append('<td class="breakCol">We are away from  <input type="time"> to <input type="time"></td>');
-      $('#addCol').hide();
-      $('#removeCol').show();
-    });
-
-    // remove break
-    $('#removeCol').click(function () {
-      $('.breakCol').remove();
-      $('#removeCol').hide();
-      $('#addCol').show();
-    });
-  });
-</script>
-
 </html>
